@@ -1,4 +1,4 @@
-package io.github.cursodsousa.eurekaserver;
+package com.joshaby.fintech.eurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package io.github.cursodsousa.eurekaserver;
+package com.joshaby.fintech.eurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
