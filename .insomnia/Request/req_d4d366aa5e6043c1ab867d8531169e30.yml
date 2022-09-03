@@ -1,0 +1,21 @@
+_id: req_d4d366aa5e6043c1ab867d8531169e30
+type: Request
+parentId: fld_77d707473e6f49b99f40a64635f63f4f
+modified: 1662173957353
+created: 1662173411880
+url: http://{{ _.host }}:36145/clientes?cpf=14362513468
+name: /clientes?cpf=
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1662173411880
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

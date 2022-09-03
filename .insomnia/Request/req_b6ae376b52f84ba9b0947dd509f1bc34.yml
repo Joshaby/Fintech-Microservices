@@ -1,0 +1,31 @@
+_id: req_b6ae376b52f84ba9b0947dd509f1bc34
+type: Request
+parentId: fld_77d707473e6f49b99f40a64635f63f4f
+modified: 1662173949492
+created: 1662173391328
+url: http://{{ _.host }}:36145/clientes
+name: /clientes
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"cpf": "14362513468",
+    	"nome": "José Henrique",
+    	"idade": 21
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3cd63021bf1345689ffa80029268b88f
+authentication: {}
+metaSortKey: -1662173391328
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
