@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/cartoes")
 @Slf4j
@@ -27,5 +29,11 @@ public class CartaoResource {
         Cartao cartao = dto.toCartao();
         service.save(cartao);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Cartao>> findByRendaLessThanEqual(@RequestParam Long renda) {
+        List<Cartao> cartaoes = service.findByRendaLessThanEqual(renda);
+        return ResponseEntity.ok(cartaoes);
     }
 }
