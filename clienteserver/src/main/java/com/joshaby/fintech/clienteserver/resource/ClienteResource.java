@@ -20,11 +20,11 @@ public class ClienteResource {
 
     private final ClienteService service;
 
-//    @GetMapping
-//    public String status() {
-//        log.info("Obtendo o status do microservice de clientes");
-//        return "Ok";
-//    }
+    @GetMapping("/status")
+    public String status() {
+        log.info("Obtendo o status do microservice de clientes");
+        return "Ok";
+    }
 
     @PostMapping
     public ResponseEntity<URI> save(@RequestBody ClienteDTO dto) {
