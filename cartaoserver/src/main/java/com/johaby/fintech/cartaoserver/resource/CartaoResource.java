@@ -23,7 +23,7 @@ public class CartaoResource {
     }
 
     @PostMapping
-    public ResponseEntity<Cartao> save(@RequestBody CartaoDTO dto) {
+    public ResponseEntity save(@RequestBody CartaoDTO dto) {
         Cartao cartao = dto.toCartao();
         service.save(cartao);
         return ResponseEntity.ok().build();
