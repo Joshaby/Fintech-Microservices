@@ -1,8 +1,11 @@
 package com.johaby.fintech.cartaoserver.resource;
 
 import com.johaby.fintech.cartaoserver.dto.CartaoDTO;
+import com.johaby.fintech.cartaoserver.dto.ClienteCartaoDTO;
 import com.johaby.fintech.cartaoserver.entity.Cartao;
+import com.johaby.fintech.cartaoserver.entity.ClienteCartao;
 import com.johaby.fintech.cartaoserver.service.CartaoService;
+import com.johaby.fintech.cartaoserver.service.ClienteCartaoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +19,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CartaoResource {
 
-    private final CartaoService service;
+    private final CartaoService cartaoService;
+
+    private final ClienteCartaoService clienteCartaoService;
 
     @GetMapping("/status")
     public String status() {
@@ -27,13 +32,20 @@ public class CartaoResource {
     @PostMapping
     public ResponseEntity save(@RequestBody CartaoDTO dto) {
         Cartao cartao = dto.toCartao();
-        service.save(cartao);
+        cartaoService.save(cartao);
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping
+    @GetMapping(params = "renda")
     public ResponseEntity<List<Cartao>> findByRendaLessThanEqual(@RequestParam Long renda) {
-        List<Cartao> cartaoes = service.findByRendaLessThanEqual(renda);
+        List<Cartao> cartaoes = cartaoService.findByRendaLessThanEqual(renda);
         return ResponseEntity.ok(cartaoes);
+    }
+
+    @GetMapping(params = "cpf")
+    public ResponseEntity<List<ClienteCartaoDTO>> findByCpf(@RequestParam String cpf) {
+        List<ClienteCartao> clienteCartoes = clienteCartaoService.findByCpf(cpf);
+        List<ClienteCartaoDTO> dtos = clienteCartoes.stream().map(ClienteCartaoDTO::fromCartao).toList();
+        return ResponseEntity.ok(dtos);
     }
 }
