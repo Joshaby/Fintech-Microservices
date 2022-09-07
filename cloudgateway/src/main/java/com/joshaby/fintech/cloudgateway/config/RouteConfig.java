@@ -13,6 +13,7 @@ public class RouteConfig {
         return builder
                 .routes()
                     .route(r -> r.path("/clientes/**").uri("lb://clienteserver"))
+                    .route(r -> r.path("/cartoes/**").uri("lb://cartaoserver"))
                 .build();
     }
 }

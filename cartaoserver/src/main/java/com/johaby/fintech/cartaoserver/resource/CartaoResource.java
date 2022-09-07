@@ -38,8 +38,8 @@ public class CartaoResource {
 
     @GetMapping(params = "renda")
     public ResponseEntity<List<Cartao>> findByRendaLessThanEqual(@RequestParam Long renda) {
-        List<Cartao> cartaoes = cartaoService.findByRendaLessThanEqual(renda);
-        return ResponseEntity.ok(cartaoes);
+        List<Cartao> cartoes = cartaoService.findByRendaLessThanEqual(renda);
+        return ResponseEntity.ok(cartoes);
     }
 
     @GetMapping(params = "cpf")
