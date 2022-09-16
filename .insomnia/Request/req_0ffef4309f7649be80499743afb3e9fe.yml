@@ -1,17 +1,17 @@
-_id: req_d4d366aa5e6043c1ab867d8531169e30
+_id: req_0ffef4309f7649be80499743afb3e9fe
 type: Request
 parentId: fld_77d707473e6f49b99f40a64635f63f4f
-modified: 1662576744927
-created: 1662173411880
-url: "{{ _.host }}:{{ _.port }}/clientes?cpf=14362513465"
-name: /clientes?cpf=
+modified: 1662576728793
+created: 1662262297420
+url: "{{ _.host }}:{{ _.port }}/clientes/status"
+name: /clientes/status
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1662173411880
+metaSortKey: -1662262297420
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,27 +1,28 @@
-_id: req_b6ae376b52f84ba9b0947dd509f1bc34
+_id: req_2384cf345b1340488a455f4f31fb87e0
 type: Request
-parentId: fld_77d707473e6f49b99f40a64635f63f4f
-modified: 1662576882229
-created: 1662173391328
-url: "{{ _.host }}:{{ _.port }}/clientes"
-name: /clientes
+parentId: fld_3b015d46de434ba0b4fae45e9ed41806
+modified: 1662576785428
+created: 1662324143880
+url: "{{ _.host }}:{{ _.port }}/cartoes"
+name: /cartoes
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"cpf": "14362513465",
-    	"nome": "José Henrique",
-    	"idade": 21
+    	"nome": "NuBank",
+    	"bandeira": "VISA",
+    	"renda": 3000,
+    	"limiteBasico": 5500
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_3cd63021bf1345689ffa80029268b88f
+    id: pair_55335f3a68ef4fbb9dbc62b628757ce5
 authentication: {}
-metaSortKey: -1662173391328
+metaSortKey: -1662324143880
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

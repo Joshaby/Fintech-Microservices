@@ -1,0 +1,25 @@
+_id: req_b66c2753817b4bb3b32aed3cfcef8cec
+type: Request
+parentId: fld_3b015d46de434ba0b4fae45e9ed41806
+modified: 1662576782591
+created: 1662334118655
+url: "{{ _.host }}:{{ _.port }}/cartoes"
+name: /cartoes?renda=
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_019c62f5b93b4f37872a1c3f778c0d0e
+    name: renda
+    value: "5000"
+    description: ""
+headers: []
+authentication: {}
+metaSortKey: -1662334118655
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

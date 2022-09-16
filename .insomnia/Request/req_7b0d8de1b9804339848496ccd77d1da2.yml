@@ -1,17 +1,17 @@
-_id: req_d4d366aa5e6043c1ab867d8531169e30
+_id: req_7b0d8de1b9804339848496ccd77d1da2
 type: Request
-parentId: fld_77d707473e6f49b99f40a64635f63f4f
-modified: 1662576744927
-created: 1662173411880
-url: "{{ _.host }}:{{ _.port }}/clientes?cpf=14362513465"
-name: /clientes?cpf=
+parentId: fld_3b015d46de434ba0b4fae45e9ed41806
+modified: 1662576770983
+created: 1662324105432
+url: "{{ _.host }}:{{ _.port }}/cartoes/status"
+name: /cartoes/staus
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1662173411880
+metaSortKey: -1662324143930
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
