@@ -14,6 +14,7 @@ public class RouteConfig {
                 .routes()
                     .route(r -> r.path("/clientes/**").uri("lb://clienteserver"))
                     .route(r -> r.path("/cartoes/**").uri("lb://cartaoserver"))
+                    .route(r -> r.path("/avaliador-credito/**").uri("lb://avaliadorcreditoserver"))
                 .build();
     }
 }
