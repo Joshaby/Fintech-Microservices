@@ -12,5 +12,5 @@ public class SituacaoCliente {
 
     private DadosCliente dadosCliente;
 
-    private List<CartaoCliente> cartoes;
+    private List<ClienteCartao> cartoes;
 }
