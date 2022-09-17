@@ -1,0 +1,21 @@
+_id: req_f441f16886194b7abe8c307bd273653e
+type: Request
+parentId: fld_5b4a52fd2f614ca3b29b6c0d79b3bd6f
+modified: 1663293601320
+created: 1663293568165
+url: "{{ _.host }}:{{ _.port }}/avaliador-credito/status"
+name: /avaliador-credito/status
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1663293568165
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

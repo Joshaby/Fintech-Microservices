@@ -1,0 +1,25 @@
+_id: req_b3cd2583f9cb46e287408b14ecc3f88b
+type: Request
+parentId: fld_5b4a52fd2f614ca3b29b6c0d79b3bd6f
+modified: 1663300800683
+created: 1663300649476
+url: "{{ _.host }}:{{ _.port }}/avaliador-credito/situacao-cliente"
+name: /avaliador-credito/situacao-cliente?cpf=
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_1baff212cc6a452d92002270a701ab62
+    name: cpf
+    value: "14362513465"
+    description: ""
+headers: []
+authentication: {}
+metaSortKey: -1663300649476
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
