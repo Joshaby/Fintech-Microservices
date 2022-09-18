@@ -1,4 +1,4 @@
-package com.joshaby.fintech.avaliadorcreditoserver.entity;
+package com.joshaby.fintech.avaliadorcreditoserver.representation;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -2,9 +2,9 @@ package com.joshaby.fintech.avaliadorcreditoserver.resource;
 
 import com.joshaby.fintech.avaliadorcreditoserver.client.exception.DadosClienteNotFoundException;
 import com.joshaby.fintech.avaliadorcreditoserver.client.exception.ErroComunicacaoMicroserviceException;
-import com.joshaby.fintech.avaliadorcreditoserver.entity.DadosAvaliacao;
-import com.joshaby.fintech.avaliadorcreditoserver.entity.RetornoAvalicaoCliente;
-import com.joshaby.fintech.avaliadorcreditoserver.entity.SituacaoCliente;
+import com.joshaby.fintech.avaliadorcreditoserver.representation.DadosAvaliacao;
+import com.joshaby.fintech.avaliadorcreditoserver.representation.RetornoAvalicaoCliente;
+import com.joshaby.fintech.avaliadorcreditoserver.representation.SituacaoCliente;
 import com.joshaby.fintech.avaliadorcreditoserver.service.AvaliadorCreditoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

@@ -4,7 +4,7 @@ import com.joshaby.fintech.avaliadorcreditoserver.client.CartaoResourceClient;
 import com.joshaby.fintech.avaliadorcreditoserver.client.ClienteResourceClient;
 import com.joshaby.fintech.avaliadorcreditoserver.client.exception.DadosClienteNotFoundException;
 import com.joshaby.fintech.avaliadorcreditoserver.client.exception.ErroComunicacaoMicroserviceException;
-import com.joshaby.fintech.avaliadorcreditoserver.entity.*;
+import com.joshaby.fintech.avaliadorcreditoserver.representation.*;
 import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

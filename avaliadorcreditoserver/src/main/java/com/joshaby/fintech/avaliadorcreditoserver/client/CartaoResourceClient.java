@@ -1,7 +1,7 @@
 package com.joshaby.fintech.avaliadorcreditoserver.client;
 
-import com.joshaby.fintech.avaliadorcreditoserver.entity.Cartao;
-import com.joshaby.fintech.avaliadorcreditoserver.entity.ClienteCartao;
+import com.joshaby.fintech.avaliadorcreditoserver.representation.Cartao;
+import com.joshaby.fintech.avaliadorcreditoserver.representation.ClienteCartao;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
