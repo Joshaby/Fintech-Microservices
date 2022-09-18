@@ -1,5 +1,6 @@
 package com.joshaby.fintech.avaliadorcreditoserver.client;
 
+import com.joshaby.fintech.avaliadorcreditoserver.entity.Cartao;
 import com.joshaby.fintech.avaliadorcreditoserver.entity.ClienteCartao;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -13,4 +14,7 @@ public interface CartaoResourceClient {
 
     @GetMapping(params = "cpf")
     ResponseEntity<List<ClienteCartao>> findByCpf(@RequestParam String cpf);
+
+    @GetMapping(params = "renda")
+    ResponseEntity<List<Cartao>> findByRendaLessThanEqual(@RequestParam Long renda);
 }
