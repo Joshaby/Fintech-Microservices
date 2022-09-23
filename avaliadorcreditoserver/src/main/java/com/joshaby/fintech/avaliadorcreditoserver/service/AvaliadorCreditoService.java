@@ -1,10 +1,13 @@
 package com.joshaby.fintech.avaliadorcreditoserver.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.joshaby.fintech.avaliadorcreditoserver.client.CartaoResourceClient;
 import com.joshaby.fintech.avaliadorcreditoserver.client.ClienteResourceClient;
-import com.joshaby.fintech.avaliadorcreditoserver.client.exception.DadosClienteNotFoundException;
-import com.joshaby.fintech.avaliadorcreditoserver.client.exception.ErroComunicacaoMicroserviceException;
+import com.joshaby.fintech.avaliadorcreditoserver.service.exception.DadosClienteNotFoundException;
+import com.joshaby.fintech.avaliadorcreditoserver.service.exception.ErroComunicacaoMicroserviceException;
+import com.joshaby.fintech.avaliadorcreditoserver.rabbitmq.publisher.SolicitacaoEmissaoCartaoPublisher;
 import com.joshaby.fintech.avaliadorcreditoserver.representation.*;
+import com.joshaby.fintech.avaliadorcreditoserver.service.exception.ErroSolicitacaoCartaoException;
 import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -13,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -21,6 +25,8 @@ public class AvaliadorCreditoService {
     private final ClienteResourceClient clienteResourceClient;
 
     private final CartaoResourceClient cartaoResourceClient;
+
+    private final SolicitacaoEmissaoCartaoPublisher emissaoCartaoPublisher;
 
     public SituacaoCliente obterSituacaoCliente(String cpf)
             throws DadosClienteNotFoundException, ErroComunicacaoMicroserviceException {
@@ -68,6 +74,16 @@ public class AvaliadorCreditoService {
                 throw new DadosClienteNotFoundException();
             }
             throw new ErroComunicacaoMicroserviceException(e.getMessage(), e.status());
+        }
+    }
+
+    public ProtocoloSolicitacaoCartao solicitarEmissaoCartao(DadosSolicitacaoEmissaoCartao dados) {
+        try {
+            emissaoCartaoPublisher.solicitarCartao(dados);
+            String protocolo = UUID.randomUUID().toString();
+            return new ProtocoloSolicitacaoCartao(protocolo);
+        } catch (JsonProcessingException e) {
+            throw new ErroSolicitacaoCartaoException(e.getMessage());
         }
     }
 }

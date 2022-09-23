@@ -1,4 +1,4 @@
-package com.joshaby.fintech.avaliadorcreditoserver.client.exception;
+package com.joshaby.fintech.avaliadorcreditoserver.service.exception;
 
 import lombok.Getter;
 

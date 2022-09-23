@@ -1,11 +1,10 @@
 package com.joshaby.fintech.avaliadorcreditoserver.resource;
 
-import com.joshaby.fintech.avaliadorcreditoserver.client.exception.DadosClienteNotFoundException;
-import com.joshaby.fintech.avaliadorcreditoserver.client.exception.ErroComunicacaoMicroserviceException;
-import com.joshaby.fintech.avaliadorcreditoserver.representation.DadosAvaliacao;
-import com.joshaby.fintech.avaliadorcreditoserver.representation.RetornoAvalicaoCliente;
-import com.joshaby.fintech.avaliadorcreditoserver.representation.SituacaoCliente;
+import com.joshaby.fintech.avaliadorcreditoserver.service.exception.DadosClienteNotFoundException;
+import com.joshaby.fintech.avaliadorcreditoserver.service.exception.ErroComunicacaoMicroserviceException;
+import com.joshaby.fintech.avaliadorcreditoserver.representation.*;
 import com.joshaby.fintech.avaliadorcreditoserver.service.AvaliadorCreditoService;
+import com.joshaby.fintech.avaliadorcreditoserver.service.exception.ErroSolicitacaoCartaoException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -45,6 +44,16 @@ public class AvaliadorCreditoResource {
             return ResponseEntity.notFound().build();
         } catch (ErroComunicacaoMicroserviceException e) {
             return ResponseEntity.status(HttpStatus.resolve(e.getStatus())).body(e.getMessage());
+        }
+    }
+
+    @PostMapping("/solicitacoes-cartao")
+    public ResponseEntity solicitaCartao(@RequestBody DadosSolicitacaoEmissaoCartao dados) {
+        try {
+            ProtocoloSolicitacaoCartao protocolo = avaliadorCreditoService.solicitarEmissaoCartao(dados);
+            return ResponseEntity.ok(protocolo);
+        } catch (ErroSolicitacaoCartaoException e) {
+            return ResponseEntity.internalServerError().body(e.getMessage());
         }
     }
 }
