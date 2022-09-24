@@ -1,19 +1,30 @@
-_id: req_d4d366aa5e6043c1ab867d8531169e30
+_id: req_3d002e27581c489db81c0cfb598ff3d9
 type: Request
-parentId: fld_77d707473e6f49b99f40a64635f63f4f
-modified: 1663988298407
-created: 1662173411880
-url: "{{ _.host }}:{{ _.port }}/clientes?cpf=14362513465"
-name: /clientes?cpf=
+parentId: fld_5b4a52fd2f614ca3b29b6c0d79b3bd6f
+modified: 1663988360786
+created: 1663905486242
+url: "{{ _.host }}:{{ _.port }}/avaliador-credito/solicitacoes-cartao"
+name: /avaliador-credito/solicitacoes-cartao
 description: ""
-method: GET
-body: {}
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"idCartao": 1,
+    	"cpf": "14362513465",
+    	"endereco": "Rua J",
+    	"limiteLiberado": 11550
+    }
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d0b5960ca761461ea97d24e027b7bbcc
 authentication:
   type: bearer
   token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMEE0ZWZLNlhWdkpxZTZMQUQzX2JrLTRKTW1TMm85VmtkSy1QQ1JwbzBrIn0.eyJleHAiOjE2NjM5ODg1MzQsImlhdCI6MTY2Mzk4ODIzNCwianRpIjoiZmE1NzQ4MzEtOWUxZS00ZWNlLTg5NTEtMGQ3OTMxN2I2YmUwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9maW50ZWNoLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjgxMzRhZTlkLTgwNmEtNGUzNi04OTVjLTRkZmViN2M1ZTVkNyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImZpbnRlY2gtYXZhbGlhZG9yLWNhcnRvZXMiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtZmludGVjaC1yZWFsbSIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJmaW50ZWNoLWF2YWxpYWRvci1jYXJ0b2VzIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJjbGllbnRIb3N0IjoiMTcyLjE3LjAuMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SWQiOiJmaW50ZWNoLWF2YWxpYWRvci1jYXJ0b2VzIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWZpbnRlY2gtYXZhbGlhZG9yLWNhcnRvZXMiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjE3LjAuMSJ9.j6uFJkexMOO-xgPvGF5DaffZBq6YsNznmS5ZVwJSNbgadJYGhK5XCi0N9Oh4lTXlH0BiJhFyrhXQ_tD3jzAoAzq6seCPGLNHiax1QaOV6gl_lVkso7faqf2uXN9pkvfolVPIs_DqBQCNPRHxHomUwsN6lziSf73fjd-E1DluDYrk-xrAUiVVnL3rvrRNr3cSLV2MbNEGg2zvLwLZ6kzBLorq3cYB92iISmlhqWv8qsEcKi3QSpikFzMWmqCBy_D-koa1c5ZKf2C7YsMB3UTPLXHEHZ-saBBJ4WErBL84Va5wVhCX1jig-DNTskB3DxzIx7OpGBLMAlnhaWscKWCQhQ
-metaSortKey: -1662173411880
+metaSortKey: -1663905486242
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

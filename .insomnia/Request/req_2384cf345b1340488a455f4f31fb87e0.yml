@@ -1,7 +1,7 @@
 _id: req_2384cf345b1340488a455f4f31fb87e0
 type: Request
 parentId: fld_3b015d46de434ba0b4fae45e9ed41806
-modified: 1663445102333
+modified: 1663988306852
 created: 1662324143880
 url: "{{ _.host }}:{{ _.port }}/cartoes"
 name: /cartoes
@@ -12,8 +12,8 @@ body:
   text: |-
     {
     	"nome": "NuBank",
-    	"bandeira": "VISA",
-    	"renda": 3000,
+    	"bandeira": "MASTERCARD",
+    	"renda": 4000,
     	"limiteBasico": 5500
     }
 parameters: []
@@ -21,7 +21,9 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_55335f3a68ef4fbb9dbc62b628757ce5
-authentication: {}
+authentication:
+  type: bearer
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMEE0ZWZLNlhWdkpxZTZMQUQzX2JrLTRKTW1TMm85VmtkSy1QQ1JwbzBrIn0.eyJleHAiOjE2NjM5ODg1MzQsImlhdCI6MTY2Mzk4ODIzNCwianRpIjoiZmE1NzQ4MzEtOWUxZS00ZWNlLTg5NTEtMGQ3OTMxN2I2YmUwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9maW50ZWNoLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjgxMzRhZTlkLTgwNmEtNGUzNi04OTVjLTRkZmViN2M1ZTVkNyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImZpbnRlY2gtYXZhbGlhZG9yLWNhcnRvZXMiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtZmludGVjaC1yZWFsbSIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJmaW50ZWNoLWF2YWxpYWRvci1jYXJ0b2VzIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJjbGllbnRIb3N0IjoiMTcyLjE3LjAuMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SWQiOiJmaW50ZWNoLWF2YWxpYWRvci1jYXJ0b2VzIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWZpbnRlY2gtYXZhbGlhZG9yLWNhcnRvZXMiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjE3LjAuMSJ9.j6uFJkexMOO-xgPvGF5DaffZBq6YsNznmS5ZVwJSNbgadJYGhK5XCi0N9Oh4lTXlH0BiJhFyrhXQ_tD3jzAoAzq6seCPGLNHiax1QaOV6gl_lVkso7faqf2uXN9pkvfolVPIs_DqBQCNPRHxHomUwsN6lziSf73fjd-E1DluDYrk-xrAUiVVnL3rvrRNr3cSLV2MbNEGg2zvLwLZ6kzBLorq3cYB92iISmlhqWv8qsEcKi3QSpikFzMWmqCBy_D-koa1c5ZKf2C7YsMB3UTPLXHEHZ-saBBJ4WErBL84Va5wVhCX1jig-DNTskB3DxzIx7OpGBLMAlnhaWscKWCQhQ
 metaSortKey: -1662324143880
 isPrivate: false
 settingStoreCookies: true

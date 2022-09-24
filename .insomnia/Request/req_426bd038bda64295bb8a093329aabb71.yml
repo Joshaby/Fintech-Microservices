@@ -1,0 +1,26 @@
+_id: req_426bd038bda64295bb8a093329aabb71
+type: Request
+parentId: fld_bd2cae2241a542ffad416c4348383bdf
+modified: 1663988174905
+created: 1663987137484
+url: ""
+name: Token JWT
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: oauth2
+  grantType: client_credentials
+  accessTokenUrl: http://localhost:8081/realms/fintech-realm/protocol/openid-connect/token
+  clientId: fintech-avaliador-cartoes
+  clientSecret: xJzprMBOBDUX4PnwWzNsv3eyncRtk0Bp
+metaSortKey: -1663987137484
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
