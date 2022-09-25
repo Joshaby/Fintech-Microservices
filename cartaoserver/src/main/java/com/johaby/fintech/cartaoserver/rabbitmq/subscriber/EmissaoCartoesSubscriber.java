@@ -7,12 +7,14 @@ import com.johaby.fintech.cartaoserver.repository.CartaoRepository;
 import com.johaby.fintech.cartaoserver.repository.ClienteCartaoRepository;
 import com.johaby.fintech.cartaoserver.representation.DadosSolicitacaoEmissaoCartao;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
+@Slf4j
 public class EmissaoCartoesSubscriber {
 
     private final CartaoRepository cartaoRepository;
@@ -31,7 +33,7 @@ public class EmissaoCartoesSubscriber {
             clienteCartao.setLimite(dados.getLimiteLiberado());
             clienteCartaoRepository.save(clienteCartao);
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            log.error("Erro ao receber solicitacao de emissao de cartao: {}", e.getMessage());
         }
     }
 }
