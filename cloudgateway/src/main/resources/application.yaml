@@ -13,7 +13,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8081/realms/fintech-realm
+          issuer-uri: http://${KEYCLOAK_SERVER}:${KEYCLOAK_PORT}/realms/fintech-realm
 
 server:
   port: 8080
@@ -23,4 +23,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://fintech-user:fintech-user@localhost:8761/eureka
+      defaultZone: http://fintech-user:fintech-user@${EUREKA_SERVER}:8761/eureka
