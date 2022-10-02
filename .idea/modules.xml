@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fintech-Microservices.iml" filepath="$PROJECT_DIR$/.idea/Fintech-Microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avaliadorcreditoserver/avaliadorcreditoserver.iml" filepath="$PROJECT_DIR$/avaliadorcreditoserver/avaliadorcreditoserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cartaoserver/cartaoserver.iml" filepath="$PROJECT_DIR$/cartaoserver/cartaoserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clienteserver/clienteserver.iml" filepath="$PROJECT_DIR$/clienteserver/clienteserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudgateway/cloudgateway.iml" filepath="$PROJECT_DIR$/cloudgateway/cloudgateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
+    </modules>
+  </component>
+</project>

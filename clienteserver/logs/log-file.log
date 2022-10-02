@@ -1,0 +1,25 @@
+2022-10-01 22:24:25.717  INFO 121028 --- [main] o.s.nativex.NativeListener               : AOT mode disabled
+2022-10-01 22:24:25.779  INFO 121028 --- [main] c.j.f.c.ClienteserverApplicationTests    : Starting ClienteserverApplicationTests using Java 17.0.4.1 on fedora with PID 121028 (started by jose in /home/jose/Documentos/Cursos da udemy/Domine Microservicos e Mensageria com Spring Cloud e Docker/Fintech-Microservices/fintech-microservices/clienteserver)
+2022-10-01 22:24:25.780  INFO 121028 --- [main] c.j.f.c.ClienteserverApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2022-10-01 22:24:26.894  INFO 121028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-01 22:24:27.042  INFO 121028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interfaces.
+2022-10-01 22:24:27.297  INFO 121028 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=aeba9d22-1a90-39c3-92cc-eda7bf78f0b3
+2022-10-01 22:24:27.680  INFO 121028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-01 22:24:27.884  INFO 121028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-01 22:24:27.944  INFO 121028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-01 22:24:27.989  INFO 121028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-01 22:24:28.025  INFO 121028 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-01 22:24:28.142  INFO 121028 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-01 22:24:28.480  INFO 121028 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-01 22:24:28.487  INFO 121028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-01 22:24:29.163  WARN 121028 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-01 22:24:31.069  INFO 121028 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-10-01 22:24:31.174  WARN 121028 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-10-01 22:24:31.186  INFO 121028 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-10-01 22:24:31.260  INFO 121028 --- [main] c.j.f.c.ClienteserverApplicationTests    : Started ClienteserverApplicationTests in 5.824 seconds (JVM running for 6.697)
+2022-10-01 22:24:31.509  INFO 121028 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-01 22:24:31.510  INFO 121028 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLIENTESERVER with eureka with status DOWN
+2022-10-01 22:24:31.518  INFO 121028 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-01 22:24:31.519  INFO 121028 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-01 22:24:31.522  INFO 121028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-01 22:24:31.524  INFO 121028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

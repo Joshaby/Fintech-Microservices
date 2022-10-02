@@ -1,0 +1,12 @@
+2022-10-01 22:24:04.415  INFO 120663 --- [main] o.s.nativex.NativeListener               : AOT mode disabled
+2022-10-01 22:24:04.560  INFO 120663 --- [main] a.AvaliadorcreditoserverApplicationTests : Starting AvaliadorcreditoserverApplicationTests using Java 17.0.4.1 on fedora with PID 120663 (started by jose in /home/jose/Documentos/Cursos da udemy/Domine Microservicos e Mensageria com Spring Cloud e Docker/Fintech-Microservices/fintech-microservices/avaliadorcreditoserver)
+2022-10-01 22:24:04.563  INFO 120663 --- [main] a.AvaliadorcreditoserverApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2022-10-01 22:24:06.010  INFO 120663 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9b7f5f2a-c847-38ed-ad34-f423d02f4e9b
+2022-10-01 22:24:06.997  INFO 120663 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'clienteserver' URL not provided. Will try picking an instance via load-balancing.
+2022-10-01 22:24:07.110  INFO 120663 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cartaoserver' URL not provided. Will try picking an instance via load-balancing.
+2022-10-01 22:24:08.883  INFO 120663 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-10-01 22:24:08.974  WARN 120663 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-10-01 22:24:08.991  INFO 120663 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-10-01 22:24:09.067  INFO 120663 --- [main] a.AvaliadorcreditoserverApplicationTests : Started AvaliadorcreditoserverApplicationTests in 4.978 seconds (JVM running for 5.952)
+2022-10-01 22:24:09.347  INFO 120663 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-01 22:24:09.349  INFO 120663 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AVALIADORCREDITOSERVER with eureka with status DOWN
